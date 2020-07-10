@@ -20,7 +20,7 @@ CONTENTS OF THIS FILE
  * Naomi Bismiwa
  * Christine Bismiwa
  * Tinyiko Nturi
- * Phumlani
+ * Phumlani Ntshangase
  
  
  
