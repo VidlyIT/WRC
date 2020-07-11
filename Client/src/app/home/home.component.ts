@@ -12,6 +12,7 @@ export class HomeComponent implements OnInit {
     public emailChartType: ChartType;
     public emailChartData: any;
     public emailChartLegendItems: LegendItem[];
+    public myDate = new Date();
 
     public hoursChartType: ChartType;
     public hoursChartData: any;
@@ -33,9 +34,9 @@ export class HomeComponent implements OnInit {
         series: [62, 32, 6]
       };
       this.emailChartLegendItems = [
-        { title: 'Open', imageClass: 'fa fa-circle text-info' },
-        { title: 'Bounce', imageClass: 'fa fa-circle text-danger' },
-        { title: 'Unsubscribe', imageClass: 'fa fa-circle text-warning' }
+        { title: 'Clean for drinking', imageClass: 'fa fa-circle text-info' },
+        { title: 'For washing', imageClass: 'fa fa-circle text-danger' },
+        { title: 'For watering', imageClass: 'fa fa-circle text-warning' }
       ];
 
       this.hoursChartType = ChartType.Line;
@@ -71,9 +72,9 @@ export class HomeComponent implements OnInit {
         }]
       ];
       this.hoursChartLegendItems = [
-        { title: 'Open', imageClass: 'fa fa-circle text-info' },
-        { title: 'Click', imageClass: 'fa fa-circle text-danger' },
-        { title: 'Click Second Time', imageClass: 'fa fa-circle text-warning' }
+        { title: 'Acidity (pH)', imageClass: 'fa fa-circle text-info' },
+        { title: 'Turbidity', imageClass: 'fa fa-circle text-danger' },
+        { title: 'Conductivity', imageClass: 'fa fa-circle text-warning' }
       ];
 
       this.activityChartType = ChartType.Bar;
@@ -102,8 +103,8 @@ export class HomeComponent implements OnInit {
         }]
       ];
       this.activityChartLegendItems = [
-        { title: 'Tesla Model S', imageClass: 'fa fa-circle text-info' },
-        { title: 'BMW 5 Series', imageClass: 'fa fa-circle text-danger' }
+        { title: 'Acidity (pH)', imageClass: 'fa fa-circle text-info' },
+        { title: 'Less Acidity(pH)', imageClass: 'fa fa-circle text-danger' }
       ];
 
 

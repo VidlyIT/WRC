@@ -13,7 +13,8 @@ export class NavbarComponent implements OnInit{
     location: Location;
     private toggleButton: any;
     private sidebarVisible: boolean;
-
+    public schools = ['Jeppe High School', 'Springs boys high', 'Kwa Thema High School', 'Kenneth Masiekela', 'Phulong High School'];
+    public selectedSchool = 'Select local school in district';
     constructor(location: Location,  private element: ElementRef) {
       this.location = location;
           this.sidebarVisible = false;
@@ -56,11 +57,15 @@ export class NavbarComponent implements OnInit{
           titlee = titlee.slice( 1 );
       }
 
-      for(var item = 0; item < this.listTitles.length; item++){
-          if(this.listTitles[item].path === titlee){
+      for (var item = 0; item < this.listTitles.length; item++){
+          if (this.listTitles[item].path === titlee){
               return this.listTitles[item].title;
           }
       }
       return 'Dashboard';
+    }
+
+    changeSchool(school: string) {
+        this.selectedSchool = school;
     }
 }

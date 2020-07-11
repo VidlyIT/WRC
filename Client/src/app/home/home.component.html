@@ -1,54 +1,78 @@
 <div class="main-content">
     <div class="container-fluid">
         <div class="row">
+            <div class="col-lg-3 col-md-6 col-sm-6">
+                <div class="card card-stats">
+                    <div class="card-header card-header-warning card-header-icon">
+                        <p class="card-category">pH</p>
+                        <hr>
+                        <h3 class="card-title">15
+                        </h3>
+                    </div>
+                    <div class="card-footer">
+                        <div class="stats">
+                            <hr>
+                            <p class="card-category">Average past 30 minutes</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-6">
+                <div class="card card-stats">
+                    <div class="card-header card-header-warning card-header-icon">
+                        <p class="card-category">Turbity (NTU)</p>
+                        <hr>
+                        <h3 class="card-title">15
+                        </h3>
+                    </div>
+                    <div class="card-footer">
+                        <div class="stats">
+                            <hr>
+                            <p class="card-category">Average past 30 minutes</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-6">
+                <div class="card card-stats">
+                    <div class="card-header card-header-warning card-header-icon">
+                        <p class="card-category">Conductivity</p>
+                        <hr>
+                        <h3 class="card-title">15
+                        </h3>
+                    </div>
+                    <div class="card-footer">
+                        <div class="stats">
+                            <hr>
+                            <p class="card-category">Average past 30 minutes</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
             <div class="col-md-4">
-                <lbd-chart
-                  [title]="'Email Statistics'"
-                  [subtitle]="'Last Campaign Performance'"
-                  [chartClass]="'ct-perfect-fourth'"
-                  [chartType]="emailChartType"
-                  [chartData]="emailChartData"
-                  [legendItems]="emailChartLegendItems"
-                  [withHr]="true"
-                  [footerIconClass]="'fa fa-clock-o'"
-                  [footerText]="'Campaign sent 2 days ago'">
+                <lbd-chart [title]="'Reliable Water Supply'" [subtitle]="'View by district'" [chartClass]="'ct-perfect-fourth'" [chartType]="emailChartType" [chartData]="emailChartData" [legendItems]="emailChartLegendItems" [withHr]="true" [footerIconClass]="'fa fa-clock-o'"
+                    [footerText]="myDate">
                 </lbd-chart>
             </div>
             <div class="col-md-8">
-                <lbd-chart
-                  [title]="'Users Behavior'"
-                  [subtitle]="'24 Hours performance'"
-                  [chartType]="hoursChartType"
-                  [chartData]="hoursChartData"
-                  [chartOptions]="hoursChartOptions"
-                  [chartResponsive]="hoursChartResponsive"
-                  [legendItems]="hoursChartLegendItems"
-                  [withHr]="true"
-                  [footerIconClass]="'fa fa-history'"
-                  [footerText]="'Updated 3 minutes ago'">
+                <lbd-chart [title]="'Critical quality indicators trend'" [subtitle]="'24 Hours performance'" [chartType]="hoursChartType" [chartData]="hoursChartData" [chartOptions]="hoursChartOptions" [chartResponsive]="hoursChartResponsive" [legendItems]="hoursChartLegendItems"
+                    [withHr]="true" [footerIconClass]="'fa fa-history'" [footerText]="'Updated 3 minutes ago'">
                 </lbd-chart>
             </div>
         </div>
         <div class="row">
             <div class="col-md-6">
-                <lbd-chart
-                  [title]="'2014 Sales'"
-                  [subtitle]="'All products including Taxes'"
-                  [chartType]="activityChartType"
-                  [chartData]="activityChartData"
-                  [chartOptions]="activityChartOptions"
-                  [chartResponsive]="activityChartResponsive"
-                  [legendItems]="activityChartLegendItems"
-                  [withHr]="true"
-                  [footerIconClass]="'fa fa-check'"
-                  [footerText]="'Data information certified'">
+                <lbd-chart [title]="'pH distribution'" [chartType]="activityChartType" [chartData]="activityChartData" [chartOptions]="activityChartOptions" [chartResponsive]="activityChartResponsive" [legendItems]="activityChartLegendItems" [withHr]="true" [footerIconClass]="'fa fa-check'"
+                    [footerText]="'Data information certified'">
                 </lbd-chart>
             </div>
             <div class="col-md-6">
                 <div class="card">
                     <div class="header">
-                        <h4 class="title">Tasks</h4>
-                        <p class="category">Backend development</p>
+                        <h4 class="title">Alert</h4>
+                        <p class="category">Alert thresholds</p>
                     </div>
                     <div class="content">
                         <div class="table-full-width">
@@ -134,7 +158,7 @@
                                     <tr>
                                         <td>
                                             <div class="checkbox">
-                                                <input id="checkbox5" type="checkbox" >
+                                                <input id="checkbox5" type="checkbox">
                                                 <label for="checkbox5">
 
                                                 </label>
